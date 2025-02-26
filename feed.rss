@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Repolit</title><link>https://sanj0.github.io/repolit/index.html</link>
 <description>Ein Blog über Rechner, Politik und Literatur.</description><language>en</language>
-<lastBuildDate>Wed, 26 Feb 2025 14:07:46 +0100</lastBuildDate>
-<pubDate>Wed, 26 Feb 2025 14:07:46 +0100</pubDate>
+<lastBuildDate>Wed, 26 Feb 2025 14:12:31 +0100</lastBuildDate>
+<pubDate>Wed, 26 Feb 2025 14:12:31 +0100</pubDate>
 <atom:link href="https://sanj0.github.io/repolit/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Einer dieser Wahlkämpfe
@@ -44,6 +44,8 @@ Herzlich Willkommen!
 <p>Dies ist Repolit – ein Blog über <strong>Re</strong>chner, <strong>Pol</strong>itik und <strong>Lit</strong>eratur!</p>
 
 <p>Schlagwörter: <a href='schlagwort_hallo-welt.html'>hallo-welt</a></p>
+
+
 
 
 
