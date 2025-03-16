@@ -2,9 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Repolit</title><link>https://sanj0.github.io/repolit/index.html</link>
 <description>Ein Blog über Rechner, Politik und Literatur.</description><language>en</language>
-<lastBuildDate>Thu, 13 Mar 2025 13:56:56 +0100</lastBuildDate>
-<pubDate>Thu, 13 Mar 2025 13:56:56 +0100</pubDate>
+<lastBuildDate>Sun, 16 Mar 2025 12:03:45 +0100</lastBuildDate>
+<pubDate>Sun, 16 Mar 2025 12:03:45 +0100</pubDate>
 <atom:link href="https://sanj0.github.io/repolit/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Unwort des Monats: gern
+</title><description><![CDATA[
+
+<p>Lesen Sie hier, wieso <em>gern</em> für mich das Unwort des Monats ist und wieso man
+eigentlich mit »bitte« auf einen Dank antwortet.</p>
+
+<hr />
+<p>Schlagwörter: <a href='schlagwort_unwort.html'>unwort</a></p>
+]]></description><link>https://sanj0.github.io/repolit/unwort-des-monats-gern.html</link>
+<guid>https://sanj0.github.io/repolit/./unwort-des-monats-gern.html</guid>
+<dc:creator>Malte Dostal</dc:creator>
+<pubDate>Sun, 16 Mar 2025 12:03:36 +0100</pubDate></item>
 <item><title>
 Kurzkritik: »Nachmittage« (Ferdinand von Schirach)
 </title><description><![CDATA[
@@ -44,6 +57,7 @@ schrecklichen Enden überwiegen die interessante Idee des Buches.</p>
 <p>Diese Kritik befindet sich auch auf der Website <a href="https://buchklub-lipsia.github.io/books.html">unseres Buchklubs</a>.</p>
 
 <p>Schlagwörter: <a href='schlagwort_literatur.html'>literatur</a>, <a href='schlagwort_kurzkritik.html'>kurzkritik</a></p>
+
 
 
 
@@ -96,6 +110,7 @@ unerste Artikel über Rechner, Literatur und Politik geboten. Bleiben Sie eine
 Weile, schauen Sie sich um und schicken Sie Kritiken an diese Adresse: <a href="mailto:malte.dostal@gmail.com?subject=Repolit">malte.dostal@gmail.com</a></p>
 
 <p>Schlagwörter: <a href='schlagwort_hallo-welt.html'>hallo-welt</a></p>
+
 
 
 
