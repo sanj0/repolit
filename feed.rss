@@ -2,9 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Repolit</title><link>https://sanj0.github.io/repolit/index.html</link>
 <description>Ein Blog über Rechner, Politik und Literatur.</description><language>en</language>
-<lastBuildDate>Sat, 22 Mar 2025 12:20:46 +0100</lastBuildDate>
-<pubDate>Sat, 22 Mar 2025 12:20:46 +0100</pubDate>
+<lastBuildDate>Sat, 22 Mar 2025 15:09:10 +0100</lastBuildDate>
+<pubDate>Sat, 22 Mar 2025 15:09:10 +0100</pubDate>
 <atom:link href="https://sanj0.github.io/repolit/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Kurzkritik: »Nachmittage« (Ferdinand von Schirach)
+</title><description><![CDATA[
+<p>»Eines der persönlichsten Bücher von Schirach« ist das erste Werk der
+»großen Stimme der deutschen Literatur«, das ich las. Der ehemalige
+Anwalt, der nach der Hälfte seines Lebens zu seinem ursprünglichen Traum
+zurückkehrte, zu schreiben, sei mit Kafka und Kleist zu vergleichen und
+liefere hier »große Erzählkunst« – na ja. (Alles dem Manteltext
+entnommen.)</p>
+<hr />
+<p>Schlagwörter: <a href='schlagwort_literatur.html'>literatur</a>, <a href='schlagwort_kurzkritik.html'>kurzkritik</a></p>
+]]></description><link>https://sanj0.github.io/repolit/kurzkritik-nachmittage-ferdinand-von-schirach.html</link>
+<guid>https://sanj0.github.io/repolit/./kurzkritik-nachmittage-ferdinand-von-schirach.html</guid>
+<dc:creator>Malte Dostal</dc:creator>
+<pubDate>Sat, 22 Mar 2025 12:20:46 +0100</pubDate></item>
 <item><title>
 Hauptsache lesen? Fluch oder Segen: »BookTok«
 </title><description><![CDATA[
@@ -35,20 +50,6 @@ eigentlich mit »bitte« auf einen Dank antwortet.</p>
 <guid>https://sanj0.github.io/repolit/./unwort-des-monats-gern.html</guid>
 <dc:creator>Malte Dostal</dc:creator>
 <pubDate>Sun, 16 Mar 2025 12:03:36 +0100</pubDate></item>
-<item><title>
-Kurzkritik: »Nachmittage« (Ferdinand von Schirach)
-</title><description><![CDATA[
-<p>»Eines der persönlichsten Bücher von Schirach« ist das erste Werk der »großen
-Stimme der deutschen Literatur«, das ich las. Der ehemalige Anwalt, der nach
-der Hälfte seines Lebens zu seinem ursprünglichen Traum zurückkehrte, zu
-schreiben, sei mit Kafka und Kleist zu vergleichen und liefere hier »große
-Erzählkunst« – na ja. (Alles dem Manteltext entnommen.)</p>
-<hr />
-<p>Schlagwörter: <a href='schlagwort_literatur.html'>literatur</a>, <a href='schlagwort_kurzkritik.html'>kurzkritik</a></p>
-]]></description><link>https://sanj0.github.io/repolit/kurzkritik-nachmittage-ferdinand-von-schirach.html</link>
-<guid>https://sanj0.github.io/repolit/./kurzkritik-nachmittage-ferdinand-von-schirach.html</guid>
-<dc:creator>Malte Dostal</dc:creator>
-<pubDate>Thu, 13 Mar 2025 13:56:44 +0100</pubDate></item>
 <item><title>
 Gedicht des Monats: »Wer nie sein Brot mit Tränen aß«
 </title><description><![CDATA[
