@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Grundlegendes zur JVM und der Operandenspeicherung in Rechnern</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://sanj0.github.io/repolit/index.html">Repolit</a></h1>
+<div id="description">Ein Blog über Rechner, Politik und Literatur.</div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="grundlegendes-zur-java-virtual-machine-und-operandenspeicherung-in.html">
+Grundlegendes zur JVM und der Operandenspeicherung in Rechnern
+</a></h3>
+<!-- bashblog_timestamp: #202503251725.05# -->
+<div class="subtitle">25. März 2025 &mdash; 
+Malte Dostal
+</div>
+<!-- text begin -->
+<p>Das Geheimnis der Plattformunabhängigkeit von Java, also der
+Fähigkeit, mit nur einem Kompilat auf Rechnern aller Architektur und
+ungeachtet des Betriebssystems zu laufen<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>,
+liegt bekanntermaßen in der JVM, der Java Virtual Machine. Wie der Name
+bereits verrät, ist sie eine virtuelle Maschine, also ein simulierter
+Rechner, der auf dem tatsächlichen Rechner läuft. Grundlegendes zur
+Funktionsweise der JVM und insbesondere zur Operandenspeicherung im
+Vergleich zu tatsächlichen Rechnern lesen Sie hier.</p>
+<hr />
+<h1 id="operandenspeicherung-allgemein">Operandenspeicherung
+allgemein</h1>
+<p>Die meisten Befehle, welche die CPU ausführen soll, benötigen einen
+oder mehrere Operanden. Sollen zwei Zahlen addiert werden, sind die
+beiden Summanden nötig, soll verzweigt werden, ist eine Sprungadresse
+nötig und soll ein Datum in den Hauptspeicher geladen werden, ist sowohl
+das Datum selbst als auch eine Zieladresse nötig. Für die Speicherung
+dieser Operanden gibt es in Rechnern im Wesentlichen drei verschiedene
+Architekturen:</p>
+<ol type="1">
+<li>Per allgemeiner Register: Die CPU verfügt über eine gewisse Anzahl
+durchnummerierter allgemeiner Register in Wortgröße (üblicherweise 32
+oder 64 Bit), in die Operanden geladen und Ergebnisse gespeichert
+werden,</li>
+<li>per Akkumulator: Die CPU verfügt über ein einziges Register, in das
+nur einer der beiden Operanden geladen wird<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> und
+in welchem stets das Ergebnis platziert wird oder</li>
+<li>per Keller (Stack): Die CPU verfügt über einen Kellerspeicher, auf
+den die Operanden gelegt (push) werden. Es werden für Operationen die
+benötigte Anzahl Operanden von diesem Keller genommen (pop).</li>
+</ol>
+<h1 id="grundlegendes-zur-jvm">Grundlegendes zur JVM</h1>
+<p>Der Java-Compiler erzeugt keinen nativ ausführbaren Code, sondern
+Java-Bytecode, der nicht direkt vom Rechner, sondern nur von der JVM
+ausgeführt werden kann. Das Format ist ziemlich einfach, was unter
+anderem an der Operandenspeicherung liegt, aber dazu gleich mehr. In der
+JVM ist jedes Datum 32 Bit lang. Alle Daten, die größer sind, nämlich
+Objekte und Arrays, liegen im Heap. Deren 32-Bit langen Adressen passen
+wiederum perfekt dazu. Davon ausgenommen sind die Datentypen
+<code>long</code> und <code>double</code>, die einfach zwei 32-Bit
+Wörter umfassen.</p>
+<h1 id="operandenspeicherung-in-der-jvm">Operandenspeicherung in der
+JVM</h1>
+<p>Jeder JVM-Befehl besteht aus einem 8 Bit langen <em>Opcode</em>, der
+nur bei bestimmten Operationen von einem oder mehreren Bytes direkter
+Operanden gefolgt ist. Die JVM verwendet nämlich den
+<em>Kellerspeicher</em> für die Operanden, genannt <em>operand
+stack</em>. Der vollständige Code einer Funktion, die zwei
+<code>int</code>s als Parameter hat und deren Summe zurückgibt, sieht
+zum Beispiel so aus:</p>
+<pre><code>iload_0 // Stecke die lokale Variable 0 (der erste Parameter) in den Keller,
+iload_1 // stecke die lokale Variable 1 (der zweite Parameter) in den Keller
+iadd    // addiere die beiden obersten Werte im Keller,
+        //     stecke wiederum das Ergebnis in den Keller und
+ireturn // gib den obersten Wert im Keller zurück.</code></pre>
+<p>Während es bei x86 etliche verschiedene Arten der Adressierung der
+Operanden und eine gute Handvoll Register für deren Speicherung gibt,
+lädt die JVM einfach alle Operanden in der richtigen Reihenfolge in den
+Keller und speichert Ergebnisse auch direkt dort. Das ist nicht nur für
+den Compiler sehr einfach, sondern lässt sich einheitlich auf allen
+möglichen Plattformen umsetzen, denn: Damit Java auf einer Plattform
+läuft, muss erst mal die JVM dort laufen. Die Architektur der JVM ist
+hinsichtlich der Operandenspeicherung einfach (und) genial.</p>
+<p>Schlagwörter: <a href='schlagwort_rechner.html'>rechner</a>, <a href='schlagwort_java.html'>java</a></p><section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Freilich nur auf Rechnern, auf denen die JVM installiert
+ist.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Der andere Operand wird direkt übergeben oder aus dem
+Hauptspeicher geladen.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<!-- text end -->
+<!-- entry end -->
+</div>
+<div id="footer">&copy; <a href="https://www.github.com/sanj0">Malte Dostal</a> &mdash; <a href="mailto:malte&#46;dostal&#64;gmail&#46;com">malte&#46;dostal&#64;gmail&#46;com</a><br/>
+Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>
+</div></div>
+</body></html>

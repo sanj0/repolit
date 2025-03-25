@@ -2,9 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Repolit</title><link>https://sanj0.github.io/repolit/index.html</link>
 <description>Ein Blog über Rechner, Politik und Literatur.</description><language>en</language>
-<lastBuildDate>Mon, 24 Mar 2025 10:30:35 +0100</lastBuildDate>
-<pubDate>Mon, 24 Mar 2025 10:30:35 +0100</pubDate>
+<lastBuildDate>Tue, 25 Mar 2025 17:28:27 +0100</lastBuildDate>
+<pubDate>Tue, 25 Mar 2025 17:28:27 +0100</pubDate>
 <atom:link href="https://sanj0.github.io/repolit/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Grundlegendes zur JVM und der Operandenspeicherung in Rechnern
+</title><description><![CDATA[
+<p>Das Geheimnis der Plattformunabhängigkeit von Java, also der
+Fähigkeit, mit nur einem Kompilat auf Rechnern aller Architektur und
+ungeachtet des Betriebssystems zu laufen<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>,
+liegt bekanntermaßen in der JVM, der Java Virtual Machine. Wie der Name
+bereits verrät, ist sie eine virtuelle Maschine, also ein simulierter
+Rechner, der auf dem tatsächlichen Rechner läuft. Grundlegendes zur
+Funktionsweise der JVM und insbesondere zur Operandenspeicherung im
+Vergleich zu tatsächlichen Rechnern lesen Sie hier.</p>
+<hr />
+<p>Schlagwörter: <a href='schlagwort_rechner.html'>rechner</a>, <a href='schlagwort_java.html'>java</a></p><section id="footnotes" class="footnotes footnotes-end-of-document"
+]]></description><link>https://sanj0.github.io/repolit/grundlegendes-zur-java-virtual-machine-und-operandenspeicherung-in.html</link>
+<guid>https://sanj0.github.io/repolit/./grundlegendes-zur-java-virtual-machine-und-operandenspeicherung-in.html</guid>
+<dc:creator>Malte Dostal</dc:creator>
+<pubDate>Tue, 25 Mar 2025 17:25:05 +0100</pubDate></item>
 <item><title>
 Vom Eindeutschen oder: Ein Plädoyer für [ˈplɛːdɔɪ̯ɐ]
 </title><description><![CDATA[
@@ -130,17 +148,4 @@ so gut sein. Diese Adaption aber, die man beim besten Willen treffender als
 <guid>https://sanj0.github.io/repolit/./kurzkritik-der-club-der-toten-dichter-n-h-kleinbaum.html</guid>
 <dc:creator>Malte Dostal</dc:creator>
 <pubDate>Mon, 24 Feb 2025 15:28:53 +0100</pubDate></item>
-<item><title>
-Herzlich Willkommen!
-</title><description><![CDATA[
-<p>Kommen Sie herein, treten Sie näher! Hier seien Ihnen allzu ernste und allzu
-unerste Artikel über Rechner, Literatur und Politik geboten. Bleiben Sie eine
-Weile, schauen Sie sich um und schicken Sie Kritiken an diese Adresse: <a href="mailto:malte.dostal@gmail.com?subject=Repolit">malte.dostal@gmail.com</a></p>
-<p>Schlagwörter: <a href='schlagwort_hallo-welt.html'>hallo-welt</a></p>
-
-<!-- text end -->
-]]></description><link>https://sanj0.github.io/repolit/herzlich-willkommen.html</link>
-<guid>https://sanj0.github.io/repolit/./herzlich-willkommen.html</guid>
-<dc:creator>Malte Dostal</dc:creator>
-<pubDate>Mon, 24 Feb 2025 15:27:59 +0100</pubDate></item>
 </channel></rss>
